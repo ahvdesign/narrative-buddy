@@ -1,0 +1,11 @@
+{
+  "name": "narrative-buddy",
+  "version": "1.0.0",
+  "description": "A tool to assist storytellers facing writer's block",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Alexander Henriquez",
+  "license": "ISC"
+}
