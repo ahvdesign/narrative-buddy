@@ -1,369 +1,192 @@
 {
-    "agents": {
-        "aa": [
-            "an artist", 
-            "a musician", 
-            "a writer", 
-            "a dancer"
-        ],
-        "ab": [
-            "an explorer", 
-            "a diplomat", 
-            "a tourist", 
-            "a trailblazer"
-        ],
-        "ac": [
-            "an enforcer", 
-            "an athlete", 
-            "a soldier", 
-            "an assassin"
-        ],
-        "ad": [
-            "an avenger", 
-            "a vigilante", 
-            "a ghost", 
-            "a rival"
-        ],
-        "ae": [
-            "a radical", 
-            "a warmonger", 
-            "an iconoclast", 
-            "a protester"
-        ],
-        "af": [
-            "a leader", 
-            "a boss", 
-            "a politician", 
-            "a guide"
-        ],
-        "ag": [
-            "a beast", 
-            "a hedonist", 
-            "a shape-shifter", 
-            "a pet"]
-            ,
-        "ah": [
-            "a worker", 
-            "a master craftsperson", 
-            "a courier", "a salesperson"
-        ],
-        "ai": [
-            "a teacher", 
-            "a messiah", 
-            "a holy person", 
-            "a hermit"]
-            ,
-        "aj": [
-            "a student", 
-            "an amateur", 
-            "a bookworm", 
-            "an apprentice"
-        ],
-        "ak": [
-            "a monster", 
-            "a demon", 
-            "a genius", 
-            "a misfit"
-        ],
-        "al": [
-            "an actor", 
-            "a scam artist", 
-            "a performer", 
-            "an understudy"
-        ],
-        "am": [
-            "a guardian",
-            "an officer",
-            "a parent",
-            "a bouncer"
-        ],
-        "an": [
-            "a fool",
-            "a fraud",
-            "a daredevil",
-            "a comedian"
-        ],
-        "ap": [
-            "a hero ",
-            "a rebel",
-            "a mentor",
-            "a martyr"
-        ],
-        "aq": [
-            "an outcast",
-            "an alien",
-            "a punk",
-            "a foreigner"
-        ],
-        "ar": [
-            "a caretaker",
-            "a curator",
-            "a gardener",
-            "a conservationist"
-        ],
-        "as": [
-            "an idol",
-            "a god",
-            "a superhuman",
-            "a model"
-        ],
-        "at": [
-            "a visionary",
-            "a painter",
-            "a prophet",
-            "an inventor"
-        ],
-        "au": [
-            "a heretic",
-            "a dissident",
-            "a black sheep",
-            "a witch"
-        ],
-        "av": [
-            "a hunter",
-            "a collector",
-            "a researcher",
-            "a killer"
-        ],
-        "aw": [
-            "a survivor",
-            "a veteran",
-            "a retiree",
-            "a victim"
-        ],
-        "ax": [
-            "a healer",
-            "a doctor",
-            "a therapist",
-            "a peacekeeper"
-        ],
-        "ay": [
-            "a companion",
-            "a secret admirer",
-            "a romantic partnership",
-            "a roommate"
-        ],
-        "az": [
-            "a villain",
-            "a tyrant",
-            "a scoundrel",
-            "a kingpin"
-        ],
-        "ba": [
-            "an expert",
-            "a virtuoso",
-            "an academic",
-            "a child prodigy"
-        ],
-        "bb": [
-            "an investigator",
-            "a conspiracy theorist",
-            "a scientist",
-            "a journalist"
-        ],
-        "bc": [
-            "an automaton",
-            "a machine",
-            "a puppet",
-            "a servant"
-        ],
-        "bd": [
-            "an aristocrat",
-            "a celebrity",
-            "a magnate",
-            "a philanthropist"
-        ],
-        "be": [
-            "an addict",
-            "a patient",
-            "an alcoholic",
-            "a gambler"
-        ],
-        "bf": [
-            "a designer",
-            "a tailor",
-            "an architect",
-            "an artisan"
-        ],
-        "bg": [
-            "a bully",
-            "a predator",
-            "a profiteer",
-            "a criminal"
-        ],
-        "bh": [
-            "a twin",
-            "a doppelganger",
-            "a stand-in",
-            "an impostor"
-        ],
-        "bi": [
-            "an archivist",
-            "an archaeologist",
-            "a librarian",
-            "a witness"
-        ],
-        "bj": [
-            "an introvert",
-            "a grump",
-            "a dreamer",
-            "a wanderer"
-        ],
-        "bk": [
-            "a merchant",
-            "a grifter",
-            "an investor",
-            "a miser"
-        ]
-    },
-    "engines": {
-        "aa": [
-            "wants to unravel the mystery of",
-            "wants to spread a lie about"
-        ],
-        "ab": [
-            "wants to find hope in/for",
-            "wants to bring despair to/with"
-        ],
-        "ac": [
-            "wants to hold on to",
-            "wants to let go of"
-        ],
-        "ad": [
-            "wants to hide an obsession with",
-            "wants to stop being haunted by"
-        ],
-        "ae": [
-            "wants to escape",
-            "wants to find"
-        ],
-        "af": [
-            "wants to expose the secret of",
-            "wants to bury the secret of"
-        ],
-        "ag": [
-            "wants to erase a memory of/with",
-            "wants to restore a memory of/with"
-        ],
-        "ah": [
-            "wants to get revenge with/on",
-            "wants to end a conflict with"
-        ],
-        "ai": [
-            "wants to create (or improve)",
-            "wants to destroy"
-        ],
-        "aj": [
-            "wants to achieve a dream involving",
-            "wants to draw attention to"
-        ],
-        "ak": [
-            "wants to end the power of",
-            "wants to gain the power of"
-        ],
-        "al": [
-            "wants to find redemption in/for",
-            "wants to find a way back to"
-        ],
-        "am": [
-            "wants to defeat",
-            "wants to find peace with/in/for"
-        ],
-        "an": [
-            "wants to save the world with/from",
-            "wants to save a life with/from"
-        ],
-        "ao": [
-            "wants to destroy the world with",
-            "wants to destroy someone's dream with/for"
-        ],
-        "ap": [
-            "wants to win a bet with/for",
-            "wants to win (or win over)"
-        ],
-        "aq": [
-            "wants to end an obligation",
-            "wants to establish loyalty through/in"
-        ],
-        "ar": [
-            "wants to regain",
-            "wants to get rid of"
-        ],
-        "as": [
-            "wants to reveal the dangers of",
-            "wants to conceal the dangers of"
-        ],
-        "at": [
-            "wants to find love in/with",
-            "wants to ease a heartbreak with/of"
-        ],
-        "au": [
-            "wants to hurt (or damage)",
-            "wants to heal (or fix)"
-        ],
-        "av": [
-            "wants to liberate",
-            "wants to gain freedom with/from"
-        ],
-        "aw": [
-            "wants to help solve the problem of",
-            "wants to steal a victory from/with"
-        ],
-        "ax": [
-            "wants to end a family obligation to",
-            "wants to connect with family through"
-        ],
-        "ay": [
-            "wants to steal (or steal from)",
-            "wants to stop the theft of"
-        ],
-        "az": [
-            "wants to finally satisfy an unspoken desire for",
-            "wants to protect"
-        ],
-        "ba": [
-            "wants to rise to the challenge of",
-            "wants to reveal the good in"
-        ],
-        "bb": [
-            "wants to betray (or betray someone with)",
-            "wants to deliver justice for/with"
-        ],
-        "bc": [
-            "wants to obtain",
-            "wants to abandon"
-        ],
-        "bd": [
-            "wants to be saved by",
-            "wants to save"
-        ],
-        "be": [
-            "wants to upstage a rival with",
-            "wants to commit a crime with/involving"
-        ],
-        "bf": [
-            "wants to save a loved one with",
-            "wants to improve the reputation of"
-        ],
-        "bg": [
-            "wants to follow a path leading to",
-            "wants to restore former glory with the help of"
-        ],
-        "bh": [
-            "wants to control",
-            "wants to shirk responsibility for"
-        ],
-        "bi": [
-            "wants to gain fame with/from",
-            "wants to gain fortune with/from"
-        ],
-        "bj": [
-            "wants to enact a secret plan focused on",
-            "wants to unmask the conspiracy of"
-        ]
-    },
-    "anchors": {},
-    "conflicts": {},
-    "aspects": {}
+  "agents": {
+    "aa": ["an artist", "a musician", "a writer", "a dancer"],
+    "ab": ["an explorer", "a diplomat", "a tourist", "a trailblazer"],
+    "ac": ["an enforcer", "an athlete", "a soldier", "an assassin"],
+    "ad": ["an avenger", "a vigilante", "a ghost", "a rival"],
+    "ae": ["a radical", "a warmonger", "an iconoclast", "a protester"],
+    "af": ["a leader", "a boss", "a politician", "a guide"],
+    "ag": ["a beast", "a hedonist", "a shape-shifter", "a pet"],
+    "ah": ["a worker", "a master craftsperson", "a courier", "a salesperson"],
+    "ai": ["a teacher", "a messiah", "a holy person", "a hermit"],
+    "aj": ["a student", "an amateur", "a bookworm", "an apprentice"],
+    "ak": ["a monster", "a demon", "a genius", "a misfit"],
+    "al": ["an actor", "a scam artist", "a performer", "an understudy"],
+    "am": ["a guardian", "an officer", "a parent", "a bouncer"],
+    "an": ["a fool", "a fraud", "a daredevil", "a comedian"],
+    "ap": ["a hero ", "a rebel", "a mentor", "a martyr"],
+    "aq": ["an outcast", "an alien", "a punk", "a foreigner"],
+    "ar": ["a caretaker", "a curator", "a gardener", "a conservationist"],
+    "as": ["an idol", "a god", "a superhuman", "a model"],
+    "at": ["a visionary", "a painter", "a prophet", "an inventor"],
+    "au": ["a heretic", "a dissident", "a black sheep", "a witch"],
+    "av": ["a hunter", "a collector", "a researcher", "a killer"],
+    "aw": ["a survivor", "a veteran", "a retiree", "a victim"],
+    "ax": ["a healer", "a doctor", "a therapist", "a peacekeeper"],
+    "ay": ["a companion", "a secret admirer", "a romantic partnership", "a roommate"],
+    "az": ["a villain", "a tyrant", "a scoundrel", "a kingpin"],
+    "ba": ["an expert", "a virtuoso", "an academic", "a child prodigy"],
+    "bb": ["an investigator", "a conspiracy theorist", "a scientist", "a journalist"],
+    "bc": ["an automaton", "a machine", "a puppet", "a servant"],
+    "bd": ["an aristocrat", "a celebrity", "a magnate", "a philanthropist"],
+    "be": ["an addict", "a patient", "an alcoholic", "a gambler"],
+    "bf": ["a designer", "a tailor", "an architect", "an artisan"],
+    "bg": ["a bully", "a predator", "a profiteer", "a criminal"],
+    "bh": ["a twin", "a doppelganger", "a stand-in", "an impostor"],
+    "bi": ["an archivist", "an archaeologist", "a librarian", "a witness"],
+    "bj": ["an introvert", "a grump", "a dreamer", "a wanderer"],
+    "bk": ["a merchant", "a grifter", "an investor", "a miser"]
+  },
+  "engines": {
+    "aa": ["wants to unravel the mystery of", "wants to spread a lie about"],
+    "ab": ["wants to find hope in/for", "wants to bring despair to/with"],
+    "ac": ["wants to hold on to", "wants to let go of"],
+    "ad": ["wants to hide an obsession with", "wants to stop being haunted by"],
+    "ae": ["wants to escape", "wants to find"],
+    "af": ["wants to expose the secret of", "wants to bury the secret of"],
+    "ag": ["wants to erase a memory of/with", "wants to restore a memory of/with"],
+    "ah": ["wants to get revenge with/on", "wants to end a conflict with"],
+    "ai": ["wants to create (or improve)", "wants to destroy"],
+    "aj": ["wants to achieve a dream involving", "wants to draw attention to"],
+    "ak": ["wants to end the power of", "wants to gain the power of"],
+    "al": ["wants to find redemption in/for", "wants to find a way back to"],
+    "am": ["wants to defeat", "wants to find peace with/in/for"],
+    "an": ["wants to save the world with/from", "wants to save a life with/from"],
+    "ao": ["wants to destroy the world with", "wants to destroy someone's dream with/for"],
+    "ap": ["wants to win a bet with/for", "wants to win (or win over)"],
+    "aq": ["wants to end an obligation", "wants to establish loyalty through/in"],
+    "ar": ["wants to regain", "wants to get rid of"],
+    "as": ["wants to reveal the dangers of", "wants to conceal the dangers of"],
+    "at": ["wants to find love in/with", "wants to ease a heartbreak with/of"],
+    "au": ["wants to hurt (or damage)", "wants to heal (or fix)"],
+    "av": ["wants to liberate", "wants to gain freedom with/from"],
+    "aw": ["wants to help solve the problem of", "wants to steal a victory from/with"],
+    "ax": ["wants to end a family obligation to", "wants to connect with family through"],
+    "ay": ["wants to steal (or steal from)", "wants to stop the theft of"],
+    "az": ["wants to finally satisfy an unspoken desire for", "wants to protect"],
+    "ba": ["wants to rise to the challenge of", "wants to reveal the good in"],
+    "bb": ["wants to betray (or betray someone with)", "wants to deliver justice for/with"],
+    "bc": ["wants to obtain", "wants to abandon"],
+    "bd": ["wants to be saved by", "wants to save"],
+    "be": ["wants to upstage a rival with", "wants to commit a crime with/involving"],
+    "bf": ["wants to save a loved one with", "wants to improve the reputation of"],
+    "bg": ["wants to follow a path leading to", "wants to restore former glory with the help of"],
+    "bh": ["wants to control", "wants to shirk responsibility for"],
+    "bi": ["wants to gain fame with/from", "wants to gain fortune with/from"],
+    "bj": ["wants to enact a secret plan focused on", "wants to unmask the conspiracy of"]
+  },
+  "anchors": {
+    "aa": ["a keepsake", "a letter", "a basement", "a house"],
+    "ab": ["a trap", "a prison", "a cage", "a forgery"],
+    "ac": ["a machine", "a job", "a factory", "a picture"],
+    "ad": ["a door", "an address", "a key", "a portal"],
+    "ae": ["a tool", "a workshop", "a technique", "an invention"],
+    "af": ["a duel", "a blade", "an arena", "a shield"],
+    "ag": ["a ruin", "a dump", "an artifact", "a discovery"],
+    "ah": ["a hospital", "a contagion", "a medicine", "a death"],
+    "ai": ["a masterpiece", "a song", "a school", "an instrument"],
+    "aj": ["a book", "a word", "a library", "a riddle"],
+    "ak": ["an archive", "an atlas", "an island", "a world"],
+    "al": ["a flag", "a nation", "a court", "a decree"],
+    "am": ["a cave", "a pool", "a mineral", "a statue"],
+    "an": ["a staircase", "a facility", "a tattoo", "a lock"],
+    "ap": ["a coach", "a suitcase", "a document", "a station"],
+    "aq": ["a ship", "a compass", "a shore", "an ocean"],
+    "ar": ["a grave", "a church", "a puzzle", "a flower"],
+    "as": ["a cache", "a disaster", "a bag", "a camp"],
+    "at": ["a battleground", "a war", "a weapon", "a helmet"],
+    "au": ["a safe", "a combination", "a bank", "a fortune"],
+    "av": ["a forest", "a seed", "a plant", "a paradise"],
+    "aw": ["a map", "a tunnel", "a ticket", "a path"],
+    "ax": ["a village", "a restaurant", "a holy symbol", "a boat"],
+    "ay": ["a timepiece", "a gift", "a date", "a pawn shop"],
+    "az": ["a city", "a tower", "a device", "a battery"],
+    "ba": ["a shrine", "a vision", "a drug", "a figurine"],
+    "bb": ["a costume", "a performance", "a stage", "a script"],
+    "bc": ["a piece of evidence", "a bomb", "a pen", "a hideout"],
+    "bd": ["a base", "a government", "a code", "a recording"],
+    "be": ["a game", "a lost and found", "a maze", "an ambush"],
+    "bf": ["a prototype", "a laboratory", "a poison", "a company"],
+    "bg": ["a construction site", "a blueprint", "a piece of clothing", "an accident"],
+    "bh": ["a mountain", "a flask", "a sacrifice", "a pit"],
+    "bi": ["an election", "a name", "a rebellion", "a manifesto"],
+    "bj": ["a piece of furniture", "a work of art", "a curse", "a hotel"],
+    "bk": ["a museum", "a piece of jewelry", "an exhibit", "an auction item"]
+  },
+  "conflicts": {
+    "aa": ["", ""],
+    "ab": ["", ""],
+    "ac": ["", ""],
+    "ad": ["", ""],
+    "ae": ["", ""],
+    "af": ["", ""],
+    "ag": ["", ""],
+    "ah": ["", ""],
+    "ai": ["", ""],
+    "aj": ["", ""],
+    "ak": ["", ""],
+    "al": ["", ""],
+    "am": ["", ""],
+    "an": ["", ""],
+    "ap": ["", ""],
+    "aq": ["", ""],
+    "ar": ["", ""],
+    "as": ["", ""],
+    "at": ["", ""],
+    "au": ["", ""],
+    "av": ["", ""],
+    "aw": ["", ""],
+    "ax": ["", ""],
+    "ay": ["", ""],
+    "az": ["", ""],
+    "ba": ["", ""],
+    "bb": ["", ""],
+    "bc": ["", ""],
+    "bd": ["", ""],
+    "be": ["", ""],
+    "bf": ["", ""],
+    "bg": ["", ""],
+    "bh": ["", ""],
+    "bi": ["", ""],
+    "bj": ["", ""],
+    "bk": ["", ""]
+  },
+  "aspects": {
+    "aa": ["", "", "", ""],
+    "ab": ["", "", "", ""],
+    "ac": ["", "", "", ""],
+    "ad": ["", "", "", ""],
+    "ae": ["", "", "", ""],
+    "af": ["", "", "", ""],
+    "ag": ["", "", "", ""],
+    "ah": ["", "", "", ""],
+    "ai": ["", "", "", ""],
+    "aj": ["", "", "", ""],
+    "ak": ["", "", "", ""],
+    "al": ["", "", "", ""],
+    "am": ["", "", "", ""],
+    "an": ["", "", "", ""],
+    "ap": ["", "", "", ""],
+    "aq": ["", "", "", ""],
+    "ar": ["", "", "", ""],
+    "as": ["", "", "", ""],
+    "at": ["", "", "", ""],
+    "au": ["", "", "", ""],
+    "av": ["", "", "", ""],
+    "aw": ["", "", "", ""],
+    "ax": ["", "", "", ""],
+    "ay": ["", "", "", ""],
+    "az": ["", "", "", ""],
+    "ba": ["", "", "", ""],
+    "bb": ["", "", "", ""],
+    "bc": ["", "", "", ""],
+    "bd": ["", "", "", ""],
+    "be": ["", "", "", ""],
+    "bf": ["", "", "", ""],
+    "bg": ["", "", "", ""],
+    "bh": ["", "", "", ""],
+    "bi": ["", "", "", ""],
+    "bj": ["", "", "", ""],
+    "bk": ["", "", "", ""]
+  }
 }
-
