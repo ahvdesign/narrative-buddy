@@ -1,0 +1,223 @@
+{
+    "agents": {
+        "aa": [
+            "an artist", 
+            "a musician", 
+            "a writer", 
+            "a dancer"
+        ],
+        "ab": [
+            "an explorer", 
+            "a diplomat", 
+            "a tourist", 
+            "a trailblazer"
+        ],
+        "ac": [
+            "an enforcer", 
+            "an athlete", 
+            "a soldier", 
+            "an assassin"
+        ],
+        "ad": [
+            "an avenger", 
+            "a vigilante", 
+            "a ghost", 
+            "a rival"
+        ],
+        "ae": [
+            "a radical", 
+            "a warmonger", 
+            "an iconoclast", 
+            "a protester"
+        ],
+        "af": [
+            "a leader", 
+            "a boss", 
+            "a politician", 
+            "a guide"
+        ],
+        "ag": [
+            "a beast", 
+            "a hedonist", 
+            "a shape-shifter", 
+            "a pet"]
+            ,
+        "ah": [
+            "a worker", 
+            "a master craftsperson", 
+            "a courier", "a salesperson"
+        ],
+        "ai": [
+            "a teacher", 
+            "a messiah", 
+            "a holy person", 
+            "a hermit"]
+            ,
+        "aj": [
+            "a student", 
+            "an amateur", 
+            "a bookworm", 
+            "an apprentice"
+        ],
+        "ak": [
+            "a monster", 
+            "a demon", 
+            "a genius", 
+            "a misfit"
+        ],
+        "al": [
+            "an actor", 
+            "a scam artist", 
+            "a performer", 
+            "an understudy"
+        ],
+        "am": [
+            "a guardian",
+            "an officer",
+            "a parent",
+            "a bouncer"
+        ],
+        "an": [
+            "a fool",
+            "a fraud",
+            "a daredevil",
+            "a comedian"
+        ],
+        "ap": [
+            "a hero ",
+            "a rebel",
+            "a mentor",
+            "a martyr"
+        ],
+        "aq": [
+            "an outcast",
+            "an alien",
+            "a punk",
+            "a foreigner"
+        ],
+        "ar": [
+            "a caretaker",
+            "a curator",
+            "a gardener",
+            "a conservationist"
+        ],
+        "as": [
+            "an idol",
+            "a god",
+            "a superhuman",
+            "a model"
+        ],
+        "at": [
+            "a visionary",
+            "a painter",
+            "a prophet",
+            "an inventor"
+        ],
+        "au": [
+            "a heretic",
+            "a dissident",
+            "a black sheep",
+            "a witch"
+        ],
+        "av": [
+            "a hunter",
+            "a collector",
+            "a researcher",
+            "a killer"
+        ],
+        "aw": [
+            "a survivor",
+            "a veteran",
+            "a retiree",
+            "a victim"
+        ],
+        "ax": [
+            "a healer",
+            "a doctor",
+            "a therapist",
+            "a peacekeeper"
+        ],
+        "ay": [
+            "a companion",
+            "a secret admirer",
+            "a romantic partnership",
+            "a roommate"
+        ],
+        "az": [
+            "a villain",
+            "a tyrant",
+            "a scoundrel",
+            "a kingpin"
+        ],
+        "ba": [
+            "an expert",
+            "a virtuoso",
+            "an academic",
+            "a child prodigy"
+        ],
+        "bb": [
+            "an investigator",
+            "a conspiracy theorist",
+            "a scientist",
+            "a journalist"
+        ],
+        "bc": [
+            "an automaton",
+            "a machine",
+            "a puppet",
+            "a servant"
+        ],
+        "bd": [
+            "an aristocrat",
+            "a celebrity",
+            "a magnate",
+            "a philanthropist"
+        ],
+        "be": [
+            "an addict",
+            "a patient",
+            "an alcoholic",
+            "a gambler"
+        ],
+        "bf": [
+            "a designer",
+            "a tailor",
+            "an architect",
+            "an artisan"
+        ],
+        "bg": [
+            "a bully",
+            "a predator",
+            "a profiteer",
+            "a criminal"
+        ],
+        "bh": [
+            "a twin",
+            "a doppelganger",
+            "a stand-in",
+            "an impostor"
+        ],
+        "bi": [
+            "an archivist",
+            "an archaeologist",
+            "a librarian",
+            "a witness"
+        ],
+        "bj": [
+            "an introvert",
+            "a grump",
+            "a dreamer",
+            "a wanderer"
+        ],
+        "bk": [
+            "a merchant",
+            "a grifter",
+            "an investor",
+            "a miser"
+        ]
+    },
+    "engines": {},
+    "anchors": {},
+    "conflicts": {},
+    "aspects": {}
+}
