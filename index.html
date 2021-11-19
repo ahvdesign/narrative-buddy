@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital@1&display=swap');        
+        
+        body {
+            box-sizing: border-box;
+            background-color: #212A37;
+            color: #556D91;
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+
+        .container {
+            text-align: center;
+            margin: 100px;
+            position: relative;
+            display: block;
+            background-color: #121821;
+            border-radius: 5px;
+            padding: 30px;
+        }
+        
+        #idea {
+            font-family: 'Merriweather', serif;
+            text-transform: uppercase;
+        }
+    </style>
+    <title>Narrative Buddy</title>
+</head>
+<body>
+    <div class="container">
+        <h1 id="idea"></h1>
+    </div>
+
+    <script>
+        let data = {
+            agents: [
+                ["an artist", "a musician", "a writer", "a dancer"],
+                ["an explorer", "a diplomat", "a tourist", "a trailblazer"],
+                ["an enforcer", "an athlete", "a soldier", "an assassin"],
+                ["an avenger", "a vigilante", "a ghost", "a rival"],
+                ["a radical", "a warmonger", "an iconoclast", "a protester"],
+                ["a leader", "a boss", "a politician", "a guide"],
+                ["a beast", "a hedonist", "a shape-shifter", "a pet"],
+                ["a worker", "a master craftsperson", "a courier", "a salesperson"],
+                ["a teacher", "a messiah", "a holy person", "a hermit"],
+                ["a student", "an amateur", "a bookworm", "an apprentice"],
+                ["a monster", "a demon", "a genius", "a misfit"],
+                ["an actor", "a scam artist", "a performer", "an understudy"],
+                ["a guardian", "an officer", "a parent", "a bouncer"],
+                ["a fool", "a fraud", "a daredevil", "a comedian"],
+                ["a hero ", "a rebel", "a mentor", "a martyr"],
+                ["an outcast", "an alien", "a punk", "a foreigner"],
+                ["a caretaker", "a curator", "a gardener", "a conservationist"],
+                ["an idol", "a god", "a superhuman", "a model"],
+                ["a visionary", "a painter", "a prophet", "an inventor"],
+                ["a heretic", "a dissident", "a black sheep", "a witch"],
+                ["a hunter", "a collector", "a researcher", "a killer"],
+                ["a survivor", "a veteran", "a retiree", "a victim"],
+                ["a healer", "a doctor", "a therapist", "a peacekeeper"],
+                ["a companion", "a secret admirer", "a romantic partnership", "a roommate"],
+                ["a villain", "a tyrant", "a scoundrel", "a kingpin"],
+                ["an expert", "a virtuoso", "an academic", "a child prodigy"],
+                ["an investigator", "a conspiracy theorist", "a scientist", "a journalist"],
+                ["an automaton", "a machine", "a puppet", "a servant"],
+                ["an aristocrat", "a celebrity", "a magnate", "a philanthropist"],
+                ["an addict", "a patient", "an alcoholic", "a gambler"],
+                ["a designer", "a tailor", "an architect", "an artisan"],
+                ["a bully", "a predator", "a profiteer", "a criminal"],
+                ["a twin", "a doppelganger", "a stand-in", "an impostor"],
+                ["an archivist", "an archaeologist", "a librarian", "a witness"],
+                ["an introvert", "a grump", "a dreamer", "a wanderer"],
+                ["a merchant", "a grifter", "an investor", "a miser"]
+            ],
+            engines: [
+                ["wants to unravel the mystery of", "wants to spread a lie about"],
+                ["wants to find hope in/for", "wants to bring despair to/with"],
+                ["wants to hold on to", "wants to let go of"],
+                ["wants to hide an obsession with", "wants to stop being haunted by"],
+                ["wants to escape", "wants to find"],
+                ["wants to expose the secret of", "wants to bury the secret of"],
+                ["wants to erase a memory of/with", "wants to restore a memory of/with"],
+                ["wants to get revenge with/on", "wants to end a conflict with"],
+                ["wants to create (or improve)", "wants to destroy"],
+                ["wants to achieve a dream involving", "wants to draw attention to"],
+                ["wants to end the power of", "wants to gain the power of"],
+                ["wants to find redemption in/for", "wants to find a way back to"],
+                ["wants to defeat", "wants to find peace with/in/for"],
+                ["wants to save the world with/from", "wants to save a life with/from"],
+                ["wants to destroy the world with", "wants to destroy someone's dream with/for"],
+                ["wants to win a bet with/for", "wants to win (or win over)"],
+                ["wants to end an obligation", "wants to establish loyalty through/in"],
+                ["wants to regain", "wants to get rid of"],
+                ["wants to reveal the dangers of", "wants to conceal the dangers of"],
+                ["wants to find love in/with", "wants to ease a heartbreak with/of"],
+                ["wants to hurt (or damage)", "wants to heal (or fix)"],
+                ["wants to liberate", "wants to gain freedom with/from"],
+                ["wants to help solve the problem of", "wants to steal a victory from/with"],
+                ["wants to end a family obligation to", "wants to connect with family through"],
+                ["wants to steal (or steal from)", "wants to stop the theft of"],
+                ["wants to finally satisfy an unspoken desire for", "wants to protect"],
+                ["wants to rise to the challenge of", "wants to reveal the good in"],
+                ["wants to betray (or betray someone with)", "wants to deliver justice for/with"],
+                ["wants to obtain", "wants to abandon"],
+                ["wants to be saved by", "wants to save"],
+                ["wants to upstage a rival with", "wants to commit a crime with/involving"],
+                ["wants to save a loved one with", "wants to improve the reputation of"],
+                ["wants to follow a path leading to", "wants to restore former glory with the help of"],
+                ["wants to control", "wants to shirk responsibility for"],
+                ["wants to gain fame with/from", "wants to gain fortune with/from"],
+                ["wants to enact a secret plan focused on", "wants to unmask the conspiracy of"]
+            ],
+            anchors: [
+                ["a keepsake", "a letter", "a basement", "a house"],
+                ["a trap", "a prison", "a cage", "a forgery"],
+                ["a machine", "a job", "a factory", "a picture"],
+                ["a door", "an address", "a key", "a portal"],
+                ["a tool", "a workshop", "a technique", "an invention"],
+                ["a duel", "a blade", "an arena", "a shield"],
+                ["a ruin", "a dump", "an artifact", "a discovery"],
+                ["a hospital", "a contagion", "a medicine", "a death"],
+                ["a masterpiece", "a song", "a school", "an instrument"],
+                ["a book", "a word", "a library", "a riddle"],
+                ["an archive", "an atlas", "an island", "a world"],
+                ["a flag", "a nation", "a court", "a decree"],
+                ["a cave", "a pool", "a mineral", "a statue"],
+                ["a staircase", "a facility", "a tattoo", "a lock"],
+                ["a coach", "a suitcase", "a document", "a station"],
+                ["a ship", "a compass", "a shore", "an ocean"],
+                ["a grave", "a church", "a puzzle", "a flower"],
+                ["a cache", "a disaster", "a bag", "a camp"],
+                ["a battleground", "a war", "a weapon", "a helmet"],
+                ["a safe", "a combination", "a bank", "a fortune"],
+                ["a forest", "a seed", "a plant", "a paradise"],
+                ["a map", "a tunnel", "a ticket", "a path"],
+                ["a village", "a restaurant", "a holy symbol", "a boat"],
+                ["a timepiece", "a gift", "a date", "a pawn shop"],
+                ["a city", "a tower", "a device", "a battery"],
+                ["a shrine", "a vision", "a drug", "a figurine"],
+                ["a costume", "a performance", "a stage", "a script"],
+                ["a piece of evidence", "a bomb", "a pen", "a hideout"],
+                ["a base", "a government", "a code", "a recording"],
+                ["a game", "a lost and found", "a maze", "an ambush"],
+                ["a prototype", "a laboratory", "a poison", "a company"],
+                ["a construction site", "a blueprint", "a piece of clothing", "an accident"],
+                ["a mountain", "a flask", "a sacrifice", "a pit"],
+                ["an election", "a name", "a rebellion", "a manifesto"],
+                ["a piece of furniture", "a work of art", "a curse", "a hotel"],
+                ["a museum", "a piece of jewelry", "an exhibit", "an auction item"]
+            ],
+            conflicts: [
+                ["but must reconcile with an old enemy", "but they will lose their closest friend"],
+                ["but they will have to abandon an important duty", "but their community will reject them"],
+                ["but they will have to break a religious rule", "but they will have to break a personal rule"],
+                ["but everyone will assume they did it for the wrong reasons", "but no one will know the reasons why"],
+                ["but they will have to endure something that repulses them", "but they will have to resist a great temptation"],
+                ["but it will mean betraying family", "but it will mean forgiving family"],
+                ["but the last time they tried, it ended in humiliation", "but they will have to try something frightening and new"],
+                ["but it will cost their soul", "but it means risking the thing most precious to them"],
+                ["but it will cost their repuration", "but it will cost them self respect"],
+                ["but someone they love will pay the price", "but it will reveal a hypocricy"],
+                ["but a terrible secret will come out", "but they will have to keep a terrible secret"],
+                ["but they must leave the familiar behind and face the unknown", "but they must face what they have been running from"],
+                ["but it will mean forever living a lie", "but they will have to stop living a lie"],
+                ["but it will mean breaking a promise", "but they will have to keep a promise they have been avoiding"],
+                ["but they will have to unlearn something they were taught", "but they will have to learn something difficult"],
+                ["but they must let go of something they are holding on to", "but they must take up a burden they have been avoiding"],
+                ["but they must let go of an old grudge", "but they will never forgive themselves"],
+                ["but it means giving up their dream", "but the innocent will suffer"],
+                ["but they will have to do something they can never tell anyone about", "but it will mean confessing to an old sin"],
+                ["but it will cost them their mental health", "but it will cost them their physical health"],
+                ["but they must face their deepest fear", "but it will cost them the world they know"],
+                ["but they will have to turn against a mentor", "but they will have to act against a community they belong to"],
+                ["but they will have to make a promise they know they cannot keep", "but they must swear loyalty to something or someone they abhor"],
+                ["but they must accept a loss they have been in denial about", "but they must find something they lost long ago"],
+                ["but the blame will fall on their closest friend", "but it will mean letting their greatest rival get ahead"],
+                ["but it will gain the attention of their enemy", "but they will lose the respect of someone they admire"],
+                ["but they will have to learn to trust again", "but they will have to betray a friend"],
+                ["but they must convince an enemy to help them", "but they will have to push a friend away"],
+                ["but it means a good deed will be punished", "but it means evil will go unpunished"],
+                ["but they will have to confront prejudice", "but they will have to exploit prejudice"],
+                ["but it may cost them their life", "but they will lose their life's work"],
+                ["but it will mean the corruption of something pure", "but they must become what they fear"],
+                ["but it will mean taking on a debt they cannot pay", "but it will mean paying someone else's debts"],
+                ["but they will bear the scars for all to see", "but no one will be able to see their scars"],
+                ["but first they must repair the damage they have done", "but they will owe something to someone they despise"],
+                ["but it will turn the into someone they never wanted to be", "but it will take them somewhere they never wanted to go"]
+            ],
+            aspects: [
+                ["possessed", "beautiful", "decrepit", "kind"],
+                ["protective", "empty", "faithful", "deceptive"],
+                ["haunted", "valuable", "petty", "peaceful"],
+                ["ethereal", "dire", "passionate", "clever"],
+                ["bedeviled", "stalwart", "frozen", "silent"],
+                ["controlling", "ornate", "enchanted", "fallen"],
+                ["obsessive", "holy", "forgotten", "belligerent"],
+                ["panic-inducing", "charming", "rejuvenating", "curious"],
+                ["harsh", "shadowy", "seductive", "determined"],
+                ["vindictive", "decoy", "arcane", "influential"],
+                ["fragile", "blessed", "keen", "cursed"],
+                ["impulsive", "elusive", "burning", "fascinating"],
+                ["fiery", "precious", "divine", "humble"],
+                ["fortune-telling", "bloody", "inspired", "honest"],
+                ["invisible", "wealthy", "mysterious", "trapped"],
+                ["ancient", "healing", "talkative", "shocking"],
+                ["blighted", "brilliant", "icy", "thoughtful"],
+                ["hardened", "miraculous", "defeated", "outgoing"],
+                ["giant", "long-lost", "bitter", "charmed"],
+                ["unlucky", "ghostly", "corrupted", "indestructable"],
+                ["truth-telling", "nurturing", "elegant", "ominous"],
+                ["secret", "scarred", "illusory", "generous"],
+                ["greedy", "vast", "chilling", "young"],
+                ["wounded", "fierce", "simple", "foul-mouthed"],
+                ["harmless", "irreplacable", "broken", "powerful"],
+                ["whispering", "benevolent", "shape-shifting", "irritating"],
+                ["rare", "wild", "distant", "collapsing"],
+                ["pensive", "fearless", "tender", "shattered"],
+                ["destructive", "overlooked", "vibrant", "complex"],
+                ["glorious", "treacherous", "wish-granting", "cloying"],
+                ["fickle", "mighty", "hated", "innovative"],
+                ["controversial", "durable", "famous", "swift"],
+                ["private", "damaged", "unexpected", "crude"],
+                ["unnerving", "protected", "well-loved", "disturbed"],
+                ["cut-rate", "besieged", "surprising", "cheery"],
+                ["traumatic", "misunderstood", "revolutionary", "gilded"]
+            ]
+        };
+
+        let idea = document.querySelector('#idea');
+
+        let agent;
+        let engine;
+        let anchor;
+        let conflict;
+        let aspect;
+
+        function randomNumber(min, max) {
+            return Math.floor(Math.random() * (max - min + 1) + min)
+        }
+
+        function generateAgent() {
+            let x;
+            let y;
+            x = randomNumber(0, data.agents.length - 1);
+            y = randomNumber(0, data.agents[x].length - 1);
+            agent = data.agents[x][y];
+            console.log(agent);
+        }
+
+        function generateEngine() {
+            let x;
+            let y;
+            x = randomNumber(0, data.engines.length - 1);
+            y = randomNumber(0, data.engines[x].length - 1);
+            engine = data.engines[x][y];
+            console.log(engine);
+        }
+
+        function generateAnchor() {
+            let x;
+            let y;
+            x = randomNumber(0, data.anchors.length - 1);
+            y = randomNumber(0, data.anchors[x].length - 1);
+            anchor = data.anchors[x][y];
+            console.log(anchor);
+        }
+
+        function generateConflict() {
+            let x;
+            let y;
+            x = randomNumber(0, data.conflicts.length - 1);
+            y = randomNumber(0, data.conflicts[x].length - 1);
+            conflict = data.conflicts[x][y];
+            console.log(conflict);
+        }
+
+        function generateAspect() {
+            let x;
+            let y;
+            x = randomNumber(0, data.aspects.length - 1);
+            y = randomNumber(0, data.aspects[x].length - 1);
+            aspect = data.aspects[x][y];
+            console.log(aspect);
+        }
+
+        function generateIdea() {
+            generateAgent();
+            generateEngine();
+            generateAnchor();
+            generateConflict();
+            generateAspect();
+
+            result = agent + ' ' + engine + ' ' + anchor + ' ' + conflict + '.';
+            idea.innerHTML = result;
+        };
+
+        generateIdea();
+    </script>
+</body>
+</html>
